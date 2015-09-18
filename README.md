@@ -1,3 +1,3 @@
 # Trebuchet
 
-![Alt text](https://rawgit.com/DataWookie/Trebuchet/master/trebuchet-schematic.svg "Optional title")
+![Trebuchet schematic.](https://rawgit.com/DataWookie/Trebuchet/master/trebuchet-schematic.svg "Schematic of the Trebuchet model with definitions of paremeters.")
