@@ -1,3 +1,3 @@
 # Trebuchet
 
-![Alt text](trebuchet-schematic.svg "Optional title")
+![Alt text](https://rawgit.com/DataWookie/Trebuchet/master/trebuchet-schematic.svg "Optional title")
