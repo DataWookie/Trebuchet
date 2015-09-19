@@ -7,3 +7,11 @@ This project was inspired by a Trebuchet constructed by Ross Kelly. Check out vi
 ## Model
 
 ![Trebuchet schematic.](https://rawgit.com/DataWookie/Trebuchet/master/trebuchet-schematic.svg "Schematic of the Trebuchet model with definitions of paremeters.")
+
+### Elementary Analysis
+
+If the projectile is launch with initial speed $v_0$ and an angle $\psi$ to the horizontal then it will achieve a range of
+$$
+R = \frac{2 v_0^2 \sin \psi \cos \psi}{g}
+$$
+where $g$ is gravitational acceleration.
