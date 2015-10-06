@@ -2,6 +2,17 @@ using ODE
 using DataFrames
 using PhysicalConstants
 
+# The ODE for theta should look familiar. It takes the form:
+#
+#   theta'' = k sin(theta)
+#
+# which is the equation for a simple pendulum. However, since we cannot assume that theta remains small, we cannot
+# make the simplifying approximation
+#
+#   sin(theta) ~ theta
+#
+# and, as a result, we need to use numerical techniques even for the simplest model of the trebuchet.
+#
 function solve(trebuchet::SeeSawTrebuchet)
     # Only follow dynamics until the arm has reached vertical.
     #
@@ -27,4 +38,26 @@ function solve(trebuchet::SeeSawTrebuchet)
     names!(result, [symbol(i) for i in ["time", "theta", "thetadot"]])
 
     result[result[:theta] .< pi,:]
+end
+
+# Note: This does not yet take into account the effect of the sling.
+#
+function launch_angle(solution)
+    pi - solution[:theta]
+end
+
+# Note: This does not yet take into account the effect of the sling.
+#
+function launch_speed(trebuchet::SeeSawTrebuchet, solution)
+    trebuchet.L2 .* solution[:thetadot]
+end
+
+# Note: This does not yet take into account the effect of the sling.
+#
+# This makes the simplifying assumption of not adding in the additional height of the launch point. Effectively the
+# projectile is launched from ground level.
+#
+function launch_range(trebuchet::SeeSawTrebuchet, solution)
+    psi = launch_angle(solution)
+    2 * launch_speed(trebuchet, solution).^2 .* sin(psi) .* cos(psi) / PhysicalConstants.MKS.GravAccel 
 end

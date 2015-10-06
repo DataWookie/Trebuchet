@@ -8,10 +8,18 @@ solution = Trebuchet.solve(trebuchet)
 
 using Gadfly
 
-plot(layer(x = solution[:time], y = solution[:theta], Geom.line(), Theme(default_color = colorant"black")),
-    layer(x = solution[:time], y = solution[:thetadot], Geom.line()),
-    Guide.xlabel("Time"),
+solution[:psi] = Trebuchet.launch_angle(solution);
+solution[:speed] = Trebuchet.launch_speed(trebuchet, solution);
+solution[:range] = Trebuchet.launch_range(trebuchet, solution);
+
+plot(layer(x = solution[:theta] / pi * 180, y = solution[:speed], Geom.line(), Theme(default_color = colorant"black")),
+    layer(x = solution[:theta] / pi * 180, y = solution[:range], Geom.line()),
+    Guide.xlabel("Theta"),
     Guide.ylabel(""),
-    Guide.title("Angular Displacement and Velocity of a Seesaw Trebuchet"))
+    Guide.title("Projectile Speed and Range for a Seesaw Trebuchet"))
 
-
+# Projectiles to consider:
+#
+# - golf ball (mass: 46 g)
+# - pumpkin (mass: 4 kg)
+# - cow (mass: 1000 kg)
