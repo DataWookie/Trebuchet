@@ -8,10 +8,6 @@ solution = Trebuchet.solve(trebuchet)
 
 using Gadfly
 
-solution[:psi] = Trebuchet.launch_angle(solution);
-solution[:speed] = Trebuchet.launch_speed(trebuchet, solution);
-solution[:range] = Trebuchet.launch_range(trebuchet, solution);
-
 plot(layer(x = solution[:theta] / pi * 180, y = solution[:speed], Geom.line(), Theme(default_color = colorant"black")),
     layer(x = solution[:theta] / pi * 180, y = solution[:range], Geom.line()),
     Guide.xlabel("Theta"),

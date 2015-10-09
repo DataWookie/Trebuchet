@@ -20,7 +20,7 @@ function solve(trebuchet::SeeSawTrebuchet)
     # y[2] - dtheta / dt
     #
     function lagrangian(t, y)
-        (y[1] < pi) ? 
+        (y[1] < pi) ?
         [
             y[2];
             PhysicalConstants.MKS.GravAccel * (trebuchet.M * trebuchet.L1 - trebuchet.m * trebuchet.L2) /
@@ -36,6 +36,10 @@ function solve(trebuchet::SeeSawTrebuchet)
 
     result = convert(DataFrame, hcat(T, hcat(theta...).'));
     names!(result, [symbol(i) for i in ["time", "theta", "thetadot"]])
+
+    result[:psi] = Trebuchet.launch_angle(result);
+    result[:speed] = Trebuchet.launch_speed(trebuchet, result);
+    result[:range] = Trebuchet.launch_range(trebuchet, result);
 
     result[result[:theta] .< pi,:]
 end
@@ -59,5 +63,5 @@ end
 #
 function launch_range(trebuchet::SeeSawTrebuchet, solution)
     psi = launch_angle(solution)
-    2 * launch_speed(trebuchet, solution).^2 .* sin(psi) .* cos(psi) / PhysicalConstants.MKS.GravAccel 
+    2 * launch_speed(trebuchet, solution).^2 .* sin(psi) .* cos(psi) / PhysicalConstants.MKS.GravAccel
 end
