@@ -10,8 +10,4 @@ This project was inspired by a Trebuchet constructed by Ross Kelly. Check out vi
 
 ### Elementary Analysis
 
-If the projectile is launch with initial speed $v_0$ and an angle $\psi$ to the horizontal then it will achieve a range of
-$$
-R = \frac{2 v_0^2 \sin \psi \cos \psi}{g}
-$$
-where $g$ is gravitational acceleration.
+An elementary analysis of a projectile with specific speed launched at an angle ψ above the horizontal will achieve a maximum range if ψ is 45°. Although this is a useful starting point when analysing a trebuchet, it is far from realistic. The problem is that the speed of the projectile is changing with time, so that a launch at 45° inclination might occur before the projectile has achieved maximum possible speed.
