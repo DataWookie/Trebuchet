@@ -2,7 +2,11 @@ include("Trebuchet.jl")
 
 using Trebuchet
 
-trebuchet = Trebuchet.SeeSawTrebuchet(1.0, 90.0, 0.5, 2.0, sqrt(2))
+# trebuchet = Trebuchet.SeeSawTrebuchet(1.0, 90.0, 0.5, 2.0, sqrt(2))
+L1 = 3.0
+L2 = 10.0
+
+trebuchet = Trebuchet.SeeSawTrebuchet(1000.0, 1.0, L1, L2, L2 * cos(pi/4))
 
 solution = Trebuchet.solve(trebuchet)
 

@@ -19,7 +19,7 @@ function solve(trebuchet::SeeSawTrebuchet)
     # y[1] - theta
     # y[2] - dtheta / dt
     #
-    function lagrangian(t, y)
+    function deriv(t, y)
         (y[1] < pi) ?
         [
             y[2];
@@ -32,7 +32,7 @@ function solve(trebuchet::SeeSawTrebuchet)
     #
     initial = [Trebuchet.initial_theta(trebuchet), 0];
 
-    T, theta = ode23(lagrangian, initial, [0.; 5]);
+    T, theta = ode23(deriv, initial, [0.; 5]);
 
     result = convert(DataFrame, hcat(T, hcat(theta...).'));
     names!(result, [symbol(i) for i in ["time", "theta", "thetadot"]])
