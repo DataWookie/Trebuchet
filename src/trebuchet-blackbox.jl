@@ -1,13 +1,15 @@
 # SEESAW BLACKBOX -----------------------------------------------------------------------------------------------------
 
-immutable BlackBoxTrebuchet <: TrebuchetBasic
-    m::Float64                      # Projectile mass
+immutable BlackBoxTrebuchet <: Trebuchet.TrebuchetBasic
     M::Float64                      # Counterweight mass
+    m::Float64                      # Projectile mass
     H::Float64                      # Counterweight height
+    efficiency::Float64             # Energy efficiency
+    BlackBoxTrebuchet(M, m, H, efficiency = 1) = new(M, m, H, efficiency)
 end
 
 function maximum_range(trebuchet::BlackBoxTrebuchet)
-    2 * trebuchet.M / trebuchet.m * trebuchet.H
+    2 * trebuchet.M / trebuchet.m * trebuchet.H * trebuchet.efficiency
 end
 
-b1 = BlackBoxTrebuchet(1, 90, 5)
+println(maximum_range(BlackBoxTrebuchet(500, 20, 5)))

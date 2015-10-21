@@ -8,6 +8,10 @@ At the most basic level a trebuchet is a device that converts potential energy t
 
 This project was inspired by a Trebuchet constructed by Ross Kelly. Check out videos of it in action [here](https://www.youtube.com/watch?v=X1QU1nfKZ8E "Launching view.") and [here](https://www.youtube.com/watch?v=xD6mgKXwC2c "Side view."). The design for his Trebuchet is loosely based on the [Pennypult](https://www.kickstarter.com/projects/apptivus/pennypult-ultimate-office-toy-and-model-trebuchet) Kickstarter project. 
 
+Some interesting background information:
+- https://www.youtube.com/watch?v=9seapca1Vh0
+- https://www.youtube.com/watch?v=QVO8VznqMeQ
+
 ## Physics
 
 The payload arm is significantly longer than the counterweight arm.  [Mechanical Advantage](https://en.wikipedia.org/wiki/Mechanical_advantage) then allows the payload to achieve a much larger linear velocity. However, because the range of motion for the counterweight is smaller, it must also have a significantly larger mass. There is practical upper limit on the mass of the counterweight, which cannot fall faster than [free fall](https://en.wikipedia.org/wiki/Free_fall).
@@ -23,7 +27,10 @@ The release angle, ψ, given as the initial angle between the projectile's traje
 
 ## Physical Parameters
 
-The optimal length for the payload arm is [3.75 times][trebmechanics] the length of the counterweight arm.
+According to [Trebuchet Physics][trebphysics]:
+- the optimal length for the payload arm is [3.75 times][trebmechanics] the length of the counterweight arm;
+- the optimal length of the sling is the same as the length of the long arm of the beam;
+- the counterweight should be around 100 times the mass of the projectile.
 
 ## Considerations
 
@@ -39,16 +46,19 @@ The model we consider is detailed in a SVG diagram (`trebuchet-schematic.svg`).
 ![Trebuchet schematic.](https://rawgit.com/DataWookie/Trebuchet/master/trebuchet-schematic.svg "Schematic of the Trebuchet model with definitions of p
 aremeters.")
 
+Reference parameters can be tested with the [Virtual Trebuchet](http://virtualtrebuchet.com/).
+
 ## Useful References
 
 - [Virtual Trebuchet](http://www.virtualtrebuchet.com/)
 - [Optimizing the Counterweight Trebuchet](http://demonstrations.wolfram.com/OptimizingTheCounterweightTrebuchet/)
 - [What affects the range of a trebuchet?](http://www.ucl.ac.uk/~zcapf71/Trebuchet%20coursework%20for%20website.pdf)
 - [A Mathematical Model for a Trebuchet](http://classes.engineering.wustl.edu/2009/fall/ese251/presentations/(AAM_13)Trebuchet.pdf)
-- [Trebuchet Physics](http://www.real-world-physics-problems.com/trebuchet-physics.html)
+- [Trebuchet Physics][trebphysics]
 - [Trebuchet Mechanics][trebmechanics] (which includes a high level of mathematical detail)
 
 [trebmechanics]: http://asme.usu.edu/wp-content/uploads/2013/09/trebmath35.pdf "Trebuchet Mechanics"
+[trebphysics]: http://www.real-world-physics-problems.com/trebuchet-physics.html "Trebuchet Physics"
 
 ### Elementary Analysis
 

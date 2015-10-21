@@ -1,5 +1,10 @@
 <!doctype html>
 <html lang="en">
+    <!-- Press B or . on your keyboard to blank the screen. -->
+    <!-- Press Esc to enter the slide overview. -->
+    <!-- Hold down alt and click on any element to zoom in on it. -->
+    <!-- Press "s" for the speaker notes window. -->
+    <!-- Press F11 to enter full screen mode (and again to exit). -->
 
 	<head>
 		<meta charset="utf-8">
@@ -15,7 +20,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+        <!-- Good theme options: beige, league, moon, simple. -->
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -38,27 +44,67 @@
         <!-- http://www.colorcombos.com/color-schemes/8347/ColorCombo8347.html -->
         
         <style type="text/css">
-.reveal p.leftalign {
-  margin: 20px 0;
-  line-height: 1;
-  text-align: left;
-  }
-font.bigbiscuit {
-  font-size: 250%;
-  color: #F8DEBD
-  }
+			.reveal p.leftalign {
+				margin: 20px 0;
+				text-align: left;
+			}
+            .reveal p.tight {
+                line-height: 1;
+            }
+			.bigbiscuit {
+  				font-size: 150%;
+  				color: #D88E6D;
+ 			}
+			.biscuit {
+  				color: #D88E6D;
+ 			}
+            .smallhref {
+  				font-size: 50%;
+            }
+  			cite {
+     			position: absolute;
+     			right: 0;
+     			text-align: right;
+                padding-top: 1em !important;
+                padding-left: 1em !important;
+			}
+			cite::before { 
+    			content: "↪ ";
+			}
+  			.reveal blockquote {
+				text-align: left;
+  				width: 90%;
+                box-shadow: 0 0 0;
+  			}
+            .reveal section img {
+                background: rgba(0, 0, 0, 0.0);
+                border: 0px;
+                box-shadow: 0 0 0;
+            }
+            .reveal pre {
+                padding: 10px;
+                margin:0 auto;
+            }
+            .reveal pre code {
+/*                display: block;
+                padding: 5px;
+                overflow: auto;*/
+                max-height: 800px;
+                /*word-wrap: normal;
+                background: #3F3F3F;
+                color: #DCDCDC;*/
+            }
         </style>
 	</head>
 
 	<body>
 
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
 					<h1>Trebuchet</h1>
-					<h3>Optimising a Medieval Weapon</h3>
+					<h4>Medieval Weapons & Scientific Computing</h4>
                     <small>
 					<p>
 						Andrew Collier
@@ -67,350 +113,288 @@ font.bigbiscuit {
 						<i class="fa fa-twitter"></i> <a href="http://twitter.com/DataWookie">@DataWookie</a> / <i class="fa fa-github"></i> <a href="https://github.com/DataWookie">DataWookie</a>
 					</p>
                     </small>
+                    <aside class="notes">
+                        <!--
+                        Background articles:
+
+                        https://illumin.usc.edu/140/the-trebuchet/
+                        http://www.trebuchet.com/
+                        -->
+
+                        A medieval army laying siege to a fortified city had two strategies at their disposal:
+                        <ol><
+                        <li> destroy the city's fortifications and
+                        <li> destroy the inhabitants' morale.
+                        /ol>
+                        <p>Both of these could be achieved with a Trebuchet.</p>
+
+                        <p>In the first instance they would hurl massive boulders at the city walls, eventually breaching them and gaining access to the city. There would also be devastatiing loss of life in the process.</p>
+
+                        <p>The second tactic was aimed at humuliation. The attacking army would use their Trebuchet to lob the carcasses of dead animals and loads of excrement into the besieged city. It was literally a shit-slinging contest.</p>
+                    </aside>
+				</section>
+                
+                <section>
+                    <h2>Trebuchet</h2><hr>
+                    <p class="tight">A medieval <font class="bigbiscuit">siege weapon</font> using a <font class="bigbiscuit">massive counterweight</font> to hurl a projectile <font class="bigbiscuit">great distances</font>.</p>
+                    <aside class="notes">
+                    The range of the Trebuchet was important so that the attacking army could stay outside the range of the defending archers' bows.
+
+                    The Trebuchet was invented in China around 500 BC.
+
+                    The Trebuchet developed over a period of around 1000 years, during which time it evolved significantly as a result of experimentation and innovation. The predecessors of the Trebuchet were the catapult and the ballista, both of which relied on an elastic mechanism to propel a projectile. As a result they were limited in the mass of the projectile (so they were really only suitable for human targets) as well as the accuracy which they could achieve.
+                    </aside>
+                </section>
+
+				<section>
+                    <!-- https://commons.wikimedia.org/wiki/File:Biohazard_symbol.svg -->
+                    <section>
+                        <img src="Biohazard_symbol.svg" ></img>
+                        <p>Siege of Caffa (1346)<br>
+                        <font class="smallhref"><a href="http://wwwnc.cdc.gov/eid/article/8/9/01-0536_article">Biological Warfare at the 1346 Siege of Caffa</a>, <em>Historical Review</em>, 8(9), 2002.</font>
+                        </p>
+                        <aside class="notes">
+                            In the days before canons, the Trebuchet was used to hurl rocks large distances to break down stronghold walls. It has been called the <em>Atomic Bomb of the Middle Ages</em>. Howeveer, I think that it's actually more like the <em><a href="https://en.wikipedia.org/wiki/Ricin">Ricin</a> of the Dark Ages</em>.
+
+                            The Crimean city of Caffa was heavily fortified by two concentric walls. The inner wall enclosed 6 000 houses, while the outer wall enclosed 11 000 houses. Caffa was besieged by invading Mongol forces in 1346 (it was under seige from the Mongols a number of times prior to this as well). The city was under siege for almost 3 years. During this time the Mongol army became afflicted with The Plague. The attackers hurled the plague cadavers into the city using Catapults and Trebuchets. The objective was two-fold:
+                            <ol>
+                            <li> to deal with the Mongols' mortuary problem (literally "mountains of dead");</li>
+                            <li> in the hope that the "intolerable stench" would kill the inhabitants of Caffa.</li>
+                            </ol>
+                            The cadavers would have been badly mangled in the process. Many of them would have exploded on impact, spreading the disease.
+                            
+                            In many ways, Caffa is was the site of one of the most spectacular incidents of biological warfare ever.
+                            
+                            The Black Death, which swept through Europe between 1346 and 1353, claimed claimed between a quarter and a third of the population.
+                            
+                            The Mongol army hurled plague-infected cadavers into the besieged city. The disease was transmitted to the inhabitants of the city, some of whom carried it elsewhere in the Mediterranean Basin, particularly to Italy.
+                            
+                            This is the one of the first recorded cases of biological warfare.
+                        </aside>
+                    </section>
+                    <section>
+                        <img src="Ukrain-physical-map.gif"></img>
+                        <aside class="notes">
+                            Caffa is now known as Feodosiya. It's a city on the shore of the Black Sea. It was only besieged from the land, so it could still receive supplies from sea. Also, people could escape from the city to the sea.
+                        </aside>
+                    </section>
 				</section>
 
 				<section>
-                <h2>Trebuchet</h2><hr>
-                <p class="leftalign">A medieval <font class="bigbiscuit">siege weapon</font> using<br>massive <font class="bigbiscuit">counterweight</font> to hurl a projectile <font class="bigbiscuit">great distances</font>.</p>
+                    <img src="trebuchet-schematic.png" style="padding: 30px"></img>
+                    <aside class="notes">
+                    The principle of the Trebuchet is very similar that to of a lever. You have a bar which pivots around a fulcum. A force is applied to one end of the lever (by the counterweight) and this transfer a force to the projectile and the other end of the lever.
+
+                    The power at each end of the lever must be the same. Since the velocity increases the further one gets from the fulcrum, so then the force must decrease.
+
+                    Ideally the long arm would be roughly four times as long as the short arm; the counterweight would be roughly 100 times as massive as the projectile.
+
+                    You'd want to fling a projectile of mass around 100 kg over a distance of at least 300 m (enough to be out of range of enemy archers).
+
+                    These were big machines with a massive counterweight. They were, as a result, slow to operate and could only fire around twice in an hour.
+
+                    <blockquote>
+                    	&ldquo;Give me a place to stand and with a lever I will move the whole world.&rdquo;<cite>Archimedes</cite>
+                    </blockquote>
+                    </aside>
 				</section>
 
-				<section data-background="spherical-cow-vacuum.jpg">
-                    Consider a spherical cow in a vacuum.
+                <section>
+                    <section>
+                        <blockquote>
+                            &ldquo;It can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements <span class="biscuit">as simple and as few</span> as possible <span class="biscuit">without having to surrender the adequate representation of a single datum of experience</span>.&rdquo;<br>
+                            <cite>Albert Einstein [1933]</cite>
+                        </blockquote>
+                        <aside class="notes">
+                        Einstein was of the same vintage as Winston Churchill. These men had an incredible grasp of the English language. Einstein was not always very economical with his words though. This quote has often been paraphrased as "Everything should be made as simple as possible, but no simpler."
+
+                        Simple model is too simple to actually capture key features.
+                        </aside>
+                    </section>
+                    <section data-background="spherical-cow-vacuum.jpg">
+                        <aside class="notes">
+                        But what Einstein really meant to say was "Consider a <a href="https://en.wikipedia.org/wiki/Spherical_cow">spherical cow in a vacuum</a>". Why? Well, it still looks like a cow, but it is effectively a billiard ball in a frictionless environment.
+                        
+                        The phrase comes from a joke that spoofs the simplifying assumptions that physics students are taught to use as they approach nearly any question:
+
+    Q: How does a physicist milk a cow?
+
+    A: Well, first let us consider a spherical cow...
+
+    Or in a more detailed version:
+
+    Milk production at a dairy farm was low, so the farmer wrote to the local university, asking for help from academia. A multidisciplinary team of professors was assembled, headed by a theoretical physicist, and two weeks of intensive on-site investigation took place. The scholars then returned to the university, notebooks crammed with data, where the task of writing the report was left to the team leader. Shortly thereafter the physicist returned to the farm, saying to the farmer, "I have the solution, but it only works in the case of spherical cows in a vacuum".
+                        </aside>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                    <h2>Naïve Model</h2>
+                        <aside class="notes">
+                        All of the counterweight's potential energy is converted into kinetic energy of the projectile.
+                        
+                        What is the optimal launch angle?
+                        
+                        What is the optimal range?
+                        </aside>
+                    </section>
+                    <section>
+                        <div style="font-size: 750%;"><p>$$ V \mapsto T $$</p></div>
+
+                        <p><font class="biscuit">Trebuchet</font> converts <em>all</em> potential energy into kinetic energy.</p>
+                        <aside class="notes">
+                            So it is not dissimilar to firing a bullet from a rifle, the acceleration of a Ferrari, a catapult or the propulsion of a steam locomotive. Of course, none of those are exact analogues because they all convert chemical or elastic potential energy into kinetic energy. But the underlying principle is still the same.
+                        </aside>
+                    </section>
+                    <!--
+                    <section>
+                        <h3>Energy Equation</h3>
+                        <hr>
+                        <div style="font-size: 250%;">
+                            $$ \frac{1}{2} m v^2 = M g h $$
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Range Equation</h3>
+                        <hr>
+                        <div style="font-size: 250%;">
+                            $$ R = \frac{2 v^2 \sin \psi \cos \psi}{g} $$
+                        </div>
+                    </section>
+                    -->
+                    <section>
+                        <div style="font-size: 250%;">
+                            $$ R = 2 \frac{M}{m} H $$
+                        </div>
+                        <aside class="notes">
+                            Interesting thing to note is that this is independent of the acceleration due to gravity. So a particular Trebuchet would have the same range on the Moon as it does on Earth despite the gravity being 1/6 weaker.
+                        </aside>
+                    </section>
+                    <section>
+                        <pre><code data-trim>
+immutable BlackBoxTrebuchet <: Trebuchet.TrebuchetBasic
+    M::Float64                      # Counterweight mass
+    m::Float64                      # Projectile mass
+    H::Float64                      # Counterweight height
+    efficiency::Float64             # Energy efficiency
+    BlackBoxTrebuchet(M, m, H, e = 1) = new(M, m, H, e)
+end
+
+function maximum_range(T::BlackBoxTrebuchet)
+    2 * T.M / T.m * T.H * T.efficiency
+end
+                        </code></pre>
+                        <pre><code data-trim>
+julia> maximum_range(BlackBoxTrebuchet(1000, 10, 5))
+1000.0
+                        </code></pre>
+                    </section>
 				</section>
 
-				<section>
-                    <img src="../trebuchet-schematic.svg"></img>
-				</section>
+                <section>
+                    <section>
+                    <h2>Seesaw Model</h2>
+                    </section>
+                    <!--
+                    <section>
+                        <h3>Assumptions</h3>
+                        <ul>
+                        <li> Trebuchet is rigid.</li>
+                        <li> Frictionless.</li>
+                        <li> Only counterweight and projectile have mass.</li>
+                        <li> Trebuchet is fixed to the ground.</li>
+                        </ul>
+                    </section>
+                    -->
+                    <section>
+                        <h3>Lagrangian Mechanics</h3>
+                        <div style="font-size: 250%;">
+                            $$ \frac{d}{dt} \frac{\partial L}{\partial \dot q} - \frac{\partial L}{\partial q} = 0 $$
+                        </div>
+                        <p class="leftalign">where $L = T - V$ is the <a href="https://en.wikipedia.org/wiki/Lagrangian_mechanics#Definition_of_the_Lagrangian">Lagrangian</a>.</p>
+                    </section>
+                    <section>
+                    <div style="font-size: 250%;">
+                        $$ \ddot\theta = g \frac{M L_1 - m L_2}{M L_1^2 + m L_2^2} \sin\theta $$
+                    </div>
+                    <!-- This is the equation for a Pendulum. https://en.wikipedia.org/wiki/Pendulum_(mathematics) -->
+                    <p class="leftalign">which looks an awful lot like <a href="https://en.wikipedia.org/wiki/Harmonic_oscillator">$ \ddot\theta \propto \theta $</a>.</p>
+                    <aside class="notes">
+                        This is essentially the <a href="https://en.wikipedia.org/wiki/Pendulum_(mathematics)">pendulum equation</a>. In the small amplitude limit it is approximated by the equation for a harmonic oscillator.
+                    </aside>
+                    </section>
+                    <section>
+                        <div style="font-size: 250%;">
+                            $$ M L_1 - m L_2 > 0 $$
+                        </div>
+                        <p>ensures that torque of counterweight is large enough.</p>
+                    </section>
+                    <section>
+                        <pre><code data-trim>
+immutable SeeSawTrebuchet <: Trebuchet.TrebuchetBasic
+    M::Float64                      # Counterweight mass
+    m::Float64                      # Projectile mass
+    L1::Float64                     # Length of counterweight arm
+    L2::Float64                     # Length of projectile arm
+    L3::Float64                     # Length of the projectile sling
+    L4::Float64                     # Length of the counterweight sling
+    h::Float64                      # Height of pivot
+    SeeSawTrebuchet(M, m, L1, L2, h) = new(M, m, L1, L2, 0, 0, h)
+end
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code data-trim>
+function solve(T::SeeSawTrebuchet)
+    function deriv(t, y)
+        (y[1] < pi) ?
+        [
+            y[2];
+            GravAccel * (T.M * T.L1 - T.m * T.L2) /
+                        (T.M * T.L1^2 + T.m * T.L2^2) * sin(y[1])
+        ] : [0.; 0.]
+    end
 
-				<section>
-                    <p><font style="font-size: 800%;">V &#x21A6; T</font></p>
-					<p>Converting potential energy into kinetic energy.</p>
+    initial = [Trebuchet.initial_theta(T), 0];
 
-						<aside class="notes">
-							So it is not dissimilar to firing a bullet from a rifle, or the acceleration of a Ferrari or the propulsion of a steam locomotive. Of course, none of those are exact analogues because they all convert chemical potential energy into kinetic energy. But the underlying principle is still the same.
-						</aside>
-				</section>
+    T, theta = ode23(deriv, initial, [0.; 5]);
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+    result = convert(DataFrame, hcat(T, hcat(theta...).'));
+    names!(result, [symbol(i) for i in ["time", "theta", "thetadot"]])
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+    result[result[:theta] .< pi,:]
+end
+                        </code></pre>
+                    </section>
+                    <section data-background="#ffffff">
+                    <iframe width="900" height="600" frameborder="0" scrolling="no" src="https://plot.ly/~collierab/180.embed"></iframe>
+                    </section>
+                    <section data-background="#ffffff">
+                    <iframe width="900" height="600" frameborder="0" scrolling="no" src="https://plot.ly/~collierab/184.embed"></iframe>
+                    </section>
+                </section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+                <section>
+                    <section>
+                        <h2>Trebuchets<br>attract<br>Eccentrics and Nutters</h2>
+                        And <a href="https://www.youtube.com/watch?v=9seapca1Vh0">here's</a> some evidence.
+                        <aside class="notes">
+                            <!-- http://www.smithsonianmag.com/people-places/readyaimfire-60722660/?no-ist -->
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+                            There's an army Colonel in the USA who has constructed meticulous scale-models of Trebuchets which he uses to fling small foil-wrapped packages of butter across restaurants.
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+                            A landowner in Shropshire built his own Trebuchet at the top of a sloping farm field and used it to hurl drums of flaming gasoline, grand pianos, dead farm animals, even a car.
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
-
+                            Ross is now going to give a demonstration of his Model Trebuchet. There won't be any grand pianos or drums of flaming gasoline flying through the air. I have also made him promise that he won't use it to fling shit at you.
+                        </aside>
+                    </section>
+                    <!--
+                    <section>
+                        <iframe width="840" height="630" src="https://www.youtube.com/embed/9seapca1Vh0" frameborder="0" allowfullscreen></iframe>
+                    </section>
+                    -->
+                </section>
 			</div>
 
 		</div>
@@ -428,7 +412,12 @@ Reveal.addEventListener( 'customevent', function() {
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+                math: {
+                    mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
 
 				// Optional reveal.js plugins
 				dependencies: [
@@ -437,7 +426,8 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true }
 				]
 			});
 

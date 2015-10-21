@@ -32,7 +32,7 @@ function solve(trebuchet::SeeSawTrebuchet)
     #
     initial = [Trebuchet.initial_theta(trebuchet), 0];
 
-    T, theta = ode23(deriv, initial, [0.; 5]);
+    T, theta = ode23(deriv, initial, [0.; 5]; maxstep= 0.0005);
 
     result = convert(DataFrame, hcat(T, hcat(theta...).'));
     names!(result, [symbol(i) for i in ["time", "theta", "thetadot"]])

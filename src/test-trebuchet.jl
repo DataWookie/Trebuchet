@@ -5,18 +5,41 @@ using Trebuchet
 # trebuchet = Trebuchet.SeeSawTrebuchet(1.0, 90.0, 0.5, 2.0, sqrt(2))
 L1 = 3.0
 L2 = 10.0
+M = 1000
+m = 10
 
-trebuchet = Trebuchet.SeeSawTrebuchet(1000.0, 1.0, L1, L2, L2 * cos(pi/4))
+trebuchet = Trebuchet.SeeSawTrebuchet(M, m, L1, L2, L2 * cos(pi/4))
 
 solution = Trebuchet.solve(trebuchet)
 
 using Gadfly
 
-plot(layer(x = solution[:theta] / pi * 180, y = solution[:speed], Geom.line(), Theme(default_color = colorant"black")),
-    layer(x = solution[:theta] / pi * 180, y = solution[:range], Geom.line()),
+plot(x = solution[:theta] / pi * 180, y = solution[:speed], Geom.line(), Theme(default_color = colorant"black"),
     Guide.xlabel("Theta"),
-    Guide.ylabel(""),
-    Guide.title("Projectile Speed and Range for a Seesaw Trebuchet"))
+    Guide.ylabel("Projectile Speed [m/s]"))
+
+plot(x = solution[:theta] / pi * 180, y = solution[:range], Geom.line(),
+    Guide.xlabel("Theta"),
+    Guide.ylabel("Projectile Range [m]"))
+
+# Convert columns to degrees.
+#
+solution[:theta] /= (pi / 180);
+solution[:thetadot] /= (pi / 180);
+solution[:psi] /= (pi / 180);
+
+writetable("seesaw-solution.csv", solution)
+
+# =====================================================================================================================
+
+# Ross's Trebuchet.
+#
+# m = 5 g
+# M = 180 g
+# L1 = 71 mm
+# L2 = 147 mm
+
+# =====================================================================================================================
 
 # Projectiles to consider:
 #
