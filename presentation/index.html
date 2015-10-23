@@ -6,23 +6,19 @@
     <!-- Press "s" for the speaker notes window. -->
     <!-- Press F11 to enter full screen mode (and again to exit). -->
 
+		<!-- To print, open as index.html?print-pdf -->
+
 	<head>
 		<meta charset="utf-8">
-
 		<title>Trebuchet</title>
-
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
-
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
 		<link rel="stylesheet" href="css/reveal.css">
         <!-- Good theme options: beige, league, moon, simple. -->
 		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
-
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
         <!-- Fontawesome -->
@@ -40,9 +36,9 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-        
+
         <!-- http://www.colorcombos.com/color-schemes/8347/ColorCombo8347.html -->
-        
+
         <style type="text/css">
 			.reveal p.leftalign {
 				margin: 20px 0;
@@ -61,6 +57,9 @@
             .smallhref {
   				font-size: 50%;
             }
+			.highlight {
+				background-color: #8BADA3;
+			}
   			cite {
      			position: absolute;
      			right: 0;
@@ -68,7 +67,7 @@
                 padding-top: 1em !important;
                 padding-left: 1em !important;
 			}
-			cite::before { 
+			cite::before {
     			content: "↪ ";
 			}
   			.reveal blockquote {
@@ -107,11 +106,16 @@
 					<h4>Medieval Weapons & Scientific Computing</h4>
                     <small>
 					<p>
-						Andrew Collier
-					</p>
-					<p>
-						<i class="fa fa-twitter"></i> <a href="http://twitter.com/DataWookie">@DataWookie</a> / <i class="fa fa-github"></i> <a href="https://github.com/DataWookie">DataWookie</a>
-					</p>
+						<strong>Andrew Collier</strong><br>
+					<span>
+						<i class="fa fa-twitter" style="line-height: inherit;"></i> <a href="http://twitter.com/DataWookie">@DataWookie</a> &nbsp; <i class="fa fa-github" style="line-height: inherit;"></i> <a href="https://github.com/DataWookie">DataWookie</a>
+					</span></p>
+                    <p>and</p>
+                    <p>
+                        Ross Kelly<br>
+                    <span>
+                        <i class="fa fa-twitter" style="line-height: inherit;"></i> <a href="https://twitter.com/rosshaydenkelly">@RossHaydenKelly</a> &nbsp; <i class="fa fa-google-plus-square" style="line-height: inherit;"></i> <a href="https://www.google.com/+RossKellySA">+RossKellySA</a>
+                    </span></p>
                     </small>
                     <aside class="notes">
                         <!--
@@ -128,21 +132,11 @@
                         </ol>
                         <p>Both of these could be achieved with a Trebuchet.</p>
 
-                        <p>In the first instance they would hurl massive boulders at the city walls, eventually breaching them and gaining access to the city. There would also be devastating loss of life in the process.</p>
+                        <p>In the first instance they would hurl massive boulders at the city walls, eventually breaching them and gaining access to the city. There would be devastating loss of life in the process.</p>
 
                         <p>The second tactic was aimed at humuliation. The attacking army would use their Trebuchet to lob the carcasses of dead animals and loads of excrement into the besieged city. In 1422 at the siege of the Karlstein Castle (Bohemia), the attacking Hussites flung 2000 carriage loads of dung over the city walls. It was literally a shit-slinging contest.</p>
                     </aside>
 				</section>
-                
-                <section>
-                    <h2>Trebuchet</h2><hr>
-                    <p class="tight">A medieval <font class="bigbiscuit">siege weapon</font> using a <font class="bigbiscuit">massive counterweight</font> to hurl a projectile <font class="bigbiscuit">great distances</font>.</p>
-                    <aside class="notes">
-                    The Trebuchet was invented in China around 500 BC.
-
-                    The Trebuchet developed over a period of around 1000 years, during which time it evolved significantly as a result of experimentation and innovation. The predecessors of the Trebuchet were the catapult and the ballista, both of which relied on an elastic mechanism to propel a projectile. As a result they were limited in the mass of the projectile (so they were really only suitable for human targets) as well as the accuracy which they could achieve.
-                    </aside>
-                </section>
 
 				<section>
                     <!-- https://commons.wikimedia.org/wiki/File:Biohazard_symbol.svg -->
@@ -152,29 +146,43 @@
                         <font class="smallhref"><a href="http://wwwnc.cdc.gov/eid/article/8/9/01-0536_article">Biological Warfare at the 1346 Siege of Caffa</a>, <em>Historical Review</em>, 8(9), 2002.</font>
                         </p>
                         <aside class="notes">
-                            <p>In the days before canons, the Trebuchet was used to hurl rocks large distances to break down stronghold walls. It has been called the <em>Atomic Bomb of the Middle Ages</em>. Howeveer, I think that it's actually more like the <em><a href="https://en.wikipedia.org/wiki/Ricin">Ricin</a> of the Dark Ages</em>.</p>
+                            <p>The Trebuchet has been called the <em>Atomic Bomb of the Middle Ages</em>. Howeveer, I think that it's actually more like the <em><a href="https://en.wikipedia.org/wiki/Ricin">Ricin</a> of the Dark Ages</em>.</p>
                         </aside>
                     </section>
                     <section>
                         <img src="Ukrain-physical-map.gif"></img>
                         <aside class="notes">
-                            <p>The Crimean city of Caffa (now Feodosiya in the Ukraine) was heavily fortified by two concentric walls. The inner wall enclosed 6 000 houses, while the outer wall enclosed 11 000 houses. Caffa was besieged by invading Mongol forces in 1346 (it was under seige from the Mongols a number of times prior to this as well). It was only besieged from the land, so it could still receive supplies from sea. Also, people could escape from the city to the sea. The city was under siege for almost 3 years. During this time the Mongol army became afflicted with The Plague. The attackers hurled the plague-infected cadavers into the city using Catapults and Trebuchets. The objective was two-fold:</p>
+                            <p>The Crimean city of Caffa (now Feodosiya in the Ukraine) was heavily fortified by two concentric walls. The inner wall enclosed 6 000 houses, while the outer wall enclosed 11 000 houses. Caffa was besieged by invading Mongol forces in 1346. The city was under siege for almost 3 years. During this time the Mongol army became afflicted with The Plague. The attackers hurled the plague-infected cadavers into the city using Catapults and Trebuchets. Their objective was two-fold:</p>
                             <ol>
-                            <li> to deal with the Mongols' mortuary problem (literally "mountains of dead");</li>
+                            <li> to deal with their mortuary problem (literally "mountains of dead");</li>
                             <li> in the hope that the "intolerable stench" would kill the inhabitants of Caffa.</li>
                             </ol>
-                            <p>The cadavers would have been badly mangled in the process. Many of them would have exploded on impact (like a ripe plum), spreading the disease.</p>
-                            
-                            <p>The Black Death, which swept through Europe between 1346 and 1353, claimed claimed between a quarter and a third of the population. Caffa was thus the site of one of the most spectacular incidents of biological warfare ever.</p>
+                            <p>The cadavers would have been badly mangled in the process. Many of them would have literally exploded on impact (like a ripe plum), spreading the disease. The inhabitants of the city rapidly succumbed to The Plague. However, Caffa was only besieged from the land, so it could still receive supplies from sea and people were also able to escape to the sea, carrying the infection with them to the rest of Europes.</p>
+
+                            <p>The Black Death, which swept through claimed between a quarter and a third of the population. Caffa was thus the site of one of the most spectacular incidents of biological warfare ever.</p>
                         </aside>
                     </section>
 				</section>
-                
+
+								<section>
+									<!--
+										<h2>Trebuchet</h2><hr>
+										<p class="tight">A medieval <font class="bigbiscuit">siege weapon</font> using a <font class="bigbiscuit">massive counterweight</font> to hurl a projectile <font class="bigbiscuit">great distances</font>.</p>
+									-->
+										<h2>Design Parameters</h2><hr>
+										<aside class="notes">
+										<p>The Trebuchet was invented in China around 500 BC and developed over a period of around 1000 years, during which time it evolved significantly as a result of experimentation and innovation. The predecessors of the Trebuchet were the catapult and the ballista, both of which relied on an elastic mechanism to propel a projectile. As a result they were limited in the mass of the projectile (so they were really only suitable for human targets) as well as the accuracy which they could achieve.</p>
+
+										<p>To operate an effective Trebuchet you'd want to fling a 100 kg projectile over a distance of at least 300 m (enough to be out of range of enemy archers). How would you go about designing such a machine? In practice this was done mostly by experimentation (hence the 1000 year development time), but now we are a lot more sophisticated.</p>
+										</aside>
+								</section>
+
                 <section>
                     <section>
                     <h2>Stage #1: Naïve Model</h2>
                         <aside class="notes">
-                            <p>This is the simplest possible model, used to gain a ballpark (and conservative) idea of how well a design will operate. In coding terms, this model can be thought of as a crude prototype.</p>
+                            <p>The purpose of modelling is to know how something works before we actually build it. This applies to our games but also physical systems like a trebuchet.</p>
+                            <p>This is the simplest possible model, used to gain a ballpark (and optimistic) idea of how well a design would operate. In coding terms, this model can be thought of as a crude prototype.</p>
                         </aside>
                     </section>
                     <section>
@@ -184,7 +192,7 @@
                         <aside class="notes">
                             <p>The principle of the Trebuchet is the conversion of potential energy into kinetic energy. So it is not dissimilar to firing a bullet from a rifle, the acceleration of a Ferrari, a catapult or the propulsion of a steam locomotive. Of course, none of those are exact analogues because they all convert chemical or elastic potential energy into kinetic energy. But the underlying principle is still the same.</p>
 
-                            <p>All of the counterweight's potential energy is converted into kinetic energy of the projectile.</p>
+                            <p>In the black box model all of the counterweight's potential energy is converted into kinetic energy of the projectile.</p>
                         </aside>
                     </section>
                     <!--
@@ -207,7 +215,9 @@
                         <div style="font-size: 250%;">
                             $$ R = 2 \frac{M}{m} H $$
                         </div>
-                        <p>with optimal launch angle of $ \psi = 45\unicode{xb0} $.</p>
+                        <p>with optimal launch angle of 45&deg;.</p>
+												<br>
+												<p class="highlight">What about gravity?</p>
                         <aside class="notes">
                             <p>The most important operating characteristic for a Trebuchet is its range. The attacking army needed to stay outside the range of the defending archers' bows.</p>
                             <p>Interesting thing to note is that this is independent of the acceleration due to gravity. So a particular Trebuchet would have the same range on the Moon as it does on Earth despite the gravity being 1/6 weaker.</p>
@@ -246,14 +256,14 @@ julia> maximum_range(BlackBoxTrebuchet(1000, 10, 5))
                         <aside class="notes">
                         <p>Einstein was of the same vintage as Winston Churchill. These men had an incredible grasp of the English language. Einstein was not always very economical with his words though. This quote has often been paraphrased as "Everything should be made as simple as possible, but no simpler."</p>
 
-                        <p>Naive model is too simple to actually capture key features.</p>
+                        <p>Naive model is too simple to actually capture key features. The Seesaw Model comes closer to reality.</p>
                         </aside>
                     </section>
                     <!--
                     <section data-background="spherical-cow-vacuum.jpg">
                         <aside class="notes">
                             <p>But what Einstein really meant to say was "Consider a <a href="https://en.wikipedia.org/wiki/Spherical_cow">spherical cow in a vacuum</a>". Why? Well, it still looks like a cow, but it is effectively a billiard ball in a frictionless environment.</p>
-                        
+
                             <p>The phrase comes from a joke that spoofs the simplifying assumptions that physics students are taught to use as they approach nearly any question:</p>
 
                             <p>Q: How does a physicist milk a cow?<br>A: Well, first let us consider a spherical cow...</p>
@@ -265,19 +275,20 @@ julia> maximum_range(BlackBoxTrebuchet(1000, 10, 5))
                     <section>
                         <img src="trebuchet-schematic.png" style="padding: 30px"></img>
                         <aside class="notes">
-                            <p>The principle of the Trebuchet is very similar that to of a lever. You have a bar which pivots around a fulcum. A force is applied to one end of the lever (by the counterweight) and this transfer a force to the projectile and the other end of the lever.</p>
+                            <p>The principle of the Trebuchet is essentially a lever. You have a bar which pivots around a fulcum. A force is applied to one end of the lever (by the counterweight) and this transfer a force to the projectile and the other end of the lever. This is called "Mechanical Advantage" and it's an idea that goes back to the time of Archimedes.</p>
+														<blockquote>
+																&ldquo;Give me a place to stand and with a lever I will move the whole world.&rdquo;<cite>Archimedes</cite>
+														</blockquote>
+
+                            <p>These were big machines with a massive counterweight. They were, as a result, slow to operate and could only fire around twice in an hour. You needed to make every shot count.</p>
 
                             <p>The power at each end of the lever must be the same. Since the velocity increases the further one gets from the fulcrum, so then the force must decrease.</p>
 
                             <p>Ideally the long arm would be roughly four times as long as the short arm; the counterweight would be roughly 100 times as massive as the projectile.</p>
-
-                            <p>You'd want to fling a projectile of mass around 100 kg over a distance of at least 300 m (enough to be out of range of enemy archers).</p>
-
-                            <p>These were big machines with a massive counterweight. They were, as a result, slow to operate and could only fire around twice in an hour.</p>
-                            <blockquote>
-                                &ldquo;Give me a place to stand and with a lever I will move the whole world.&rdquo;<cite>Archimedes</cite>
-                            </blockquote>
                         </aside>
+                    </section>
+                    <section>
+                        Applying <font class="biscuit">Newtonian Mechanics</font> to this system would be <em>hard</em>.
                     </section>
                     <!--
                     <section>
@@ -291,20 +302,24 @@ julia> maximum_range(BlackBoxTrebuchet(1000, 10, 5))
                     </section>
                     -->
                     <section>
-                        <h3>Lagrangian Mechanics</h3>
+                        <h3>Euler-Lagrange Equation</h3>
                         <div style="font-size: 250%;">
-                            $$ \frac{d}{dt} \frac{\partial L}{\partial \dot q} - \frac{\partial L}{\partial q} = 0 $$
+                            $$ \frac{d}{dt} \left( \frac{\partial L}{\partial \dot q} \right) - \frac{\partial L}{\partial q} = 0 $$
                         </div>
                         <p class="leftalign">where $L = T - V$ is the <a href="https://en.wikipedia.org/wiki/Lagrangian_mechanics#Definition_of_the_Lagrangian">Lagrangian</a>.</p>
+                        <aside class="notes">
+                            <p>Lagrange did for Classical Mechanics what Maxwell did for Electromagnetic Theory. Lagrangian Mechanics were developed at the end of the 18th century.</p>
+                            <p>If there's one thing that you need to take away from this equation it's the $dt$ in the denominator: we're talking about quantities that change with time and we are going to attack the problem by looking at the changes over very short periods of time.</p>
+                        </aside>
                     </section>
                     <section>
                     <div style="font-size: 250%;">
                         $$ \ddot\theta = g \frac{M L_1 - m L_2}{M L_1^2 + m L_2^2} \sin\theta $$
                     </div>
                     <!-- This is the equation for a Pendulum. https://en.wikipedia.org/wiki/Pendulum_(mathematics) -->
-                    <p class="leftalign">which looks an awful lot like <a href="https://en.wikipedia.org/wiki/Harmonic_oscillator">$ \ddot\theta \propto \theta $</a>.</p>
+                    <!-- <p class="leftalign">which looks an awful lot like <a href="https://en.wikipedia.org/wiki/Harmonic_oscillator">$ \ddot\theta \propto \theta $</a>.</p> -->
                     <aside class="notes">
-                        <p>This is essentially the <a href="https://en.wikipedia.org/wiki/Pendulum_(mathematics)">pendulum equation</a>. In the small amplitude limit it is approximated by the equation for a harmonic oscillator.</p>
+                        <p>Now if this looks familiar to you, it's not a coincidence. This is essentially the <a href="https://en.wikipedia.org/wiki/Pendulum_(mathematics)">pendulum equation</a>. In the small amplitude limit it is approximated by the equation for a harmonic oscillator.</p>
                         <p>The numerator is the nett torque on the system while the denominator is the moment of inertia.</p>
                     </aside>
                     </section>
@@ -352,7 +367,9 @@ function solve(T::SeeSawTrebuchet)
 end
                         </code></pre>
                         <aside class="notes">
-                            <p>Solving DE is a completely different application than the one we are accustomed to. Most of our calculations involve discrete quantities (number of games, amount lost or won) whereas the quantities in these calculations are changing continuously with time.</p>
+                            <p>Solving DE is a completely different process to what we are accustomed to at DERIVCO. Most of our calculations involve discrete quantities (number of games, amount lost or won) whereas the variables in these calculations are changing continuously with time.</p>
+
+														<p>The core of this code is a function which tells us how much theta changes during a small period of time. We feed this function into another meta-function, cunningly names ode2(), which implements the Runge-Kutta algorithm.</p>
                         </aside>
                     </section>
                     <section data-background="#ffffff">
@@ -361,7 +378,7 @@ end
                     <section data-background="#ffffff">
                         <iframe width="900" height="600" frameborder="0" scrolling="no" src="https://plot.ly/~collierab/184.embed"></iframe>
                         <aside class="notes">
-                            If you launched too soon then your projectile would go in the wrong direction and end up in the lap of the King. This might be a career limiting occurrence.
+                            If you launched too soon then your projectile would go in the wrong direction and might end up in the lap of the King. This might be a career limiting occurrence.
                         </aside>
                     </section>
                 </section>
@@ -369,15 +386,17 @@ end
                 <section>
                     <section>
                         <h2>Trebuchets<br>attract<br>Eccentrics and Nutters</h2>
-                        And <a href="https://www.youtube.com/watch?v=9seapca1Vh0">here's</a> some evidence.
+                        (And <a href="https://www.youtube.com/watch?v=9seapca1Vh0">here's</a> some evidence.)
                         <aside class="notes">
                             <!-- http://www.smithsonianmag.com/people-places/readyaimfire-60722660/?no-ist -->
 
+														<p>In support of this statement I would point you to Ross.</p>
+
                             <p>There's an army Colonel in the USA who has constructed meticulous scale-models of Trebuchets which he uses to fling small foil-wrapped packages of butter across restaurants.</p>
 
-                            <p>A landowner in Shropshire built his own Trebuchet at the top of a sloping farm field and used it to hurl drums of flaming gasoline, grand pianos, dead farm animals, even a car.</p>
+                            <p>A landowner in Shropshire built his own Trebuchet at the top of a sloping farm field and used it to hurl drums of flaming gasoline, grand pianos, dead farm animals and even a car.</p>
 
-                            <p>Ross is now going to give a demonstration of his Model Trebuchet. I have made him promise that he won't use it to fling any grand pianos, drums of flaming gasoline, or shit at you.</p>
+                            <p>Ross is now going to give a demonstration of his Model Trebuchet. I have made him promise that he won't use it to fling any shit, grand pianos or drums of flaming gasoline at you.</p>
                         </aside>
                     </section>
                     <!--
@@ -403,10 +422,10 @@ end
 				history: true,
 				center: true,
 
-                help: true,                 // Flags if we should show a help overlay when the questionmark key is pressed                
-                showNotes: true,            // Flags if speaker notes should be visible to all viewers
+                help: true,                 // Flags if we should show a help overlay when the questionmark key is pressed
+                // showNotes: true,            // Flags if speaker notes should be visible to all viewers
 
-				transition: 'convex', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none, fade, slide, convex, concave, zoom
 
                 math: {
                     mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
@@ -429,3 +448,54 @@ end
 
 	</body>
 </html>
+ugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+tml>
+;
+
+		</script>
+
+	</body>
+</html>
+tml>
+>
+tml>
+tml>
+>
+>
+tml>
+>
+ody>
+</html>
+tml>
+>
+tml>
+tml>
+>
+>
+tml>
+>
+/html>
+tml>
+;
+
+		</script>
+
+	</body>
+</html>
+tml>
+>
+tml>
+tml>
+>
+>
+tml>
+>
+>
+>
