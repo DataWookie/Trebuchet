@@ -1,80 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <!-- Press B or . on your keyboard to blank the screen. -->
-    <!-- Press Esc to enter the slide overview. -->
-    <!-- Hold down alt and click on any element to zoom in on it. -->
-    <!-- Press "s" for the speaker notes window. -->
-    <!-- Press F11 to enter full screen mode (and again to exit). -->
+<!-- Press B or . on your keyboard to blank the screen. -->
+<!-- Press Esc to enter the slide overview. -->
+<!-- Hold down alt and click on any element to zoom in on it. -->
+<!-- Press "s" for the speaker notes window. -->
+<!-- Press F11 to enter full screen mode (and again to exit). -->
+<!-- To print, open as index.html?print-pdf -->
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Linux version 5.1.14">
+<meta charset="utf-8">
+<title>Trebuchet</title>
+<meta name="description" content=
+"A framework for easily creating beautiful presentations using HTML">
+<meta name="author" content="Hakim El Hattab">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content=
+"black-translucent">
+<meta name="viewport" content=
+"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" href="css/reveal.css">
+<!-- Good theme options: beige, league, moon, simple. -->
+<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+<!-- Fontawesome -->
+<link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Printing and PDF exports -->
 
-		<!-- To print, open as index.html?print-pdf -->
+<script>
+                        var link = document.createElement( 'link' );
+                        link.rel = 'stylesheet';
+                        link.type = 'text/css';
+                        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+                        document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script><!--[if lt IE 9]>
+                <script src="lib/js/html5shiv.js"></script>
+                <![endif]-->
+<!-- http://www.colorcombos.com/color-schemes/8347/ColorCombo8347.html -->
 
-	<head>
-		<meta charset="utf-8">
-		<title>Trebuchet</title>
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-		<link rel="stylesheet" href="css/reveal.css">
-        <!-- Good theme options: beige, league, moon, simple. -->
-		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-
-        <!-- http://www.colorcombos.com/color-schemes/8347/ColorCombo8347.html -->
-
-        <style type="text/css">
-			.reveal p.leftalign {
-				margin: 20px 0;
-				text-align: left;
-			}
+<style type="text/css">
+                        .reveal p.leftalign {
+                                margin: 20px 0;
+                                text-align: left;
+                        }
             .reveal p.tight {
                 line-height: 1;
             }
-			.bigbiscuit {
-  				font-size: 150%;
-  				color: #D88E6D;
- 			}
-			.biscuit {
-  				color: #D88E6D;
- 			}
+                        .bigbiscuit {
+                                font-size: 150%;
+                                color: #D88E6D;
+                        }
+                        .biscuit {
+                                color: #D88E6D;
+                        }
             .smallhref {
-  				font-size: 50%;
+                                font-size: 50%;
             }
-			.highlight {
-				background-color: #8BADA3;
-			}
-  			cite {
-     			position: absolute;
-     			right: 0;
-     			text-align: right;
+                        .highlight {
+                                background-color: #8BADA3;
+                        }
+                        cite {
+                        position: absolute;
+                        right: 0;
+                        text-align: right;
                 padding-top: 1em !important;
                 padding-left: 1em !important;
-			}
-			cite::before {
-    			content: "↪ ";
-			}
-  			.reveal blockquote {
-				text-align: left;
-  				width: 90%;
+                        }
+                        cite::before {
+                        content: "↪ ";
+                        }
+                        .reveal blockquote {
+                                text-align: left;
+                                width: 90%;
                 box-shadow: 0 0 0;
-  			}
+                        }
             .reveal section img {
                 background: rgba(0, 0, 0, 0.0);
                 border: 0px;
@@ -93,109 +94,151 @@
                 background: #3F3F3F;
                 color: #DCDCDC;*/
             }
-        </style>
-	</head>
-
-	<body>
-
-		<div class="reveal">
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Trebuchet</h1>
-					<h4>Medieval Weapons & Scientific Computing</h4>
-                    <small>
-					<p>
-						<strong>Andrew Collier</strong><br>
-					<span>
-						<i class="fa fa-twitter" style="line-height: inherit;"></i> <a href="http://twitter.com/DataWookie">@DataWookie</a> &nbsp; <i class="fa fa-github" style="line-height: inherit;"></i> <a href="https://github.com/DataWookie">DataWookie</a>
-					</span></p>
-                    <p>and</p>
-                    <p>
-                        Ross Kelly<br>
-                    <span>
-                        <i class="fa fa-twitter" style="line-height: inherit;"></i> <a href="https://twitter.com/rosshaydenkelly">@RossHaydenKelly</a> &nbsp; <i class="fa fa-google-plus-square" style="line-height: inherit;"></i> <a href="https://www.google.com/+RossKellySA">+RossKellySA</a>
-                    </span></p>
-                    </small>
-                    <aside class="notes">
-                        <!--
+</style>
+</head>
+<body>
+<div class="reveal">
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section>
+<h1>Trebuchet</h1>
+<h4>Medieval Weapons & Scientific Computing</h4>
+<p><small><strong>Andrew Collier</strong><br>
+<span> <a href="http://twitter.com/DataWookie">@DataWookie</a>
+&nbsp; <a href=
+"https://github.com/DataWookie">DataWookie</a></span></small></p>
+<p><small>and</small></p>
+<p><small>Ross Kelly<br>
+<span> <a href=
+"https://twitter.com/rosshaydenkelly">@RossHaydenKelly</a> &nbsp;
+<a href=
+"https://www.google.com/+RossKellySA">+RossKellySA</a></span></small></p>
+<aside class="notes"><!--
                         Background articles:
 
                         https://illumin.usc.edu/140/the-trebuchet/
                         http://www.trebuchet.com/
                         -->
-
-                        <p>A medieval army laying siege to a fortified city had two strategies at their disposal:</p>
-                        <ol>
-                        <li> destroy the city's fortifications and
-                        <li> destroy the inhabitants' morale.
-                        </ol>
-                        <p>Both of these could be achieved with a Trebuchet.</p>
-
-                        <p>In the first instance they would hurl massive boulders at the city walls, eventually breaching them and gaining access to the city. There would be devastating loss of life in the process.</p>
-
-                        <p>The second tactic was aimed at humuliation. The attacking army would use their Trebuchet to lob the carcasses of dead animals and loads of excrement into the besieged city. In 1422 at the siege of the Karlstein Castle (Bohemia), the attacking army flung 2000 carriage loads of dung over the city walls. It was literally a shit-slinging contest.</p>
-                    </aside>
-				</section>
-
-				<section>
-                    <!-- https://commons.wikimedia.org/wiki/File:Biohazard_symbol.svg -->
-                    <section>
-                        <img src="Biohazard_symbol.svg" ></img>
-                        <p>Siege of Caffa (1346)<br>
-                        <font class="smallhref"><a href="http://wwwnc.cdc.gov/eid/article/8/9/01-0536_article">Biological Warfare at the 1346 Siege of Caffa</a>, <em>Historical Review</em>, 8(9), 2002.</font>
-                        </p>
-                        <aside class="notes">
-                            <p>The Trebuchet has been called the <em>Atomic Bomb of the Middle Ages</em>. Howeveer, I think that it's actually more like the <em><a href="https://en.wikipedia.org/wiki/Ricin">Ricin</a> of the Dark Ages</em> because it was instrumental in the first application of biolgical warfare.</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <img src="Ukrain-physical-map.gif"></img>
-                        <aside class="notes">
-                            <p>The Crimean city of Caffa (now Feodosiya in the Ukraine) was heavily fortified by two concentric walls. The inner wall enclosed 6 000 houses, while the outer wall enclosed 11 000 houses. Caffa was besieged by invading Mongol forces in 1346. The city was under siege for almost 3 years. During this time the Mongol army became afflicted with The Plague. The attackers hurled the plague-infected cadavers into the city using Catapults and Trebuchets. Their objective was two-fold:</p>
-                            <ol>
-                            <li> to deal with their mortuary problem (literally "mountains of dead");</li>
-                            <li> in the hope that the "intolerable stench" would kill the inhabitants of Caffa.</li>
-                            </ol>
-                            <p>The cadavers would have been badly mangled in the process. Many of them would have literally exploded on impact (like a ripe plum), spreading the disease. The inhabitants of the city rapidly succumbed to The Plague. However, Caffa was only besieged from the land, so it could still receive supplies from sea and people were also able to escape to the sea, carrying the infection with them to the rest of Europes.</p>
-
-                            <p>The Black Death, which swept through claimed between a quarter and a third of the population. Caffa was thus the site of one of the most spectacular incidents of biological warfare ever.</p>
-                        </aside>
-                    </section>
-				</section>
-
-								<section>
-									<!--
-										<h2>Trebuchet</h2><hr>
-										<p class="tight">A medieval <font class="bigbiscuit">siege weapon</font> using a <font class="bigbiscuit">massive counterweight</font> to hurl a projectile <font class="bigbiscuit">great distances</font>.</p>
-									-->
-										<h2>Design Parameters</h2><hr>
-										<aside class="notes">
-										<p>The Trebuchet was invented in China around 500 BC and developed over a period of around 1000 years, during which time it evolved significantly as a result of experimentation and innovation. The predecessors of the Trebuchet were the catapult and the ballista, both of which relied on an elastic mechanism to propel a projectile. As a result they were limited in the mass of the projectile (so they were really only suitable for human targets) as well as the accuracy which they could achieve.</p>
-
-                                        <p>The thing is that the Trebuchet is a wonderful piece of engineering: it can fling a 100 kg projectile over a distance of at least 300 m (enough to be out of range of enemy archers). How would you go about designing such a machine? In practice this was done mostly by experimentation (hence the 1000 year development time), but now we are a lot more sophisticated. We would first model the device. Then we'd develop a prototype. We might iterate these steps a few times before arriving at a final design. Only then would we build the final product.</p>
-										</aside>
-								</section>
-
-                <section>
-                    <section>
-                    <h2>Stage #1: Naïve Model</h2>
-                        <aside class="notes">
-                            <p>The purpose of modelling is to know how something works before we actually build it. This applies to our games but also physical systems like a trebuchet.</p>
-                            <p>This is the simplest possible model, used to gain a ballpark (and optimistic) idea of how well a design would operate. In coding terms, this model can be thought of as a crude prototype.</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <div style="font-size: 750%;"><p>$$ V \mapsto T $$</p></div>
-
-                        <p><font class="biscuit">Trebuchet</font> converts <em>all</em> potential energy into kinetic energy.</p>
-                        <aside class="notes">
-                            <p>The principle of the Trebuchet is the conversion of potential energy into kinetic energy. So it is not dissimilar to firing a bullet from a rifle, the acceleration of a Ferrari, a catapult or the propulsion of a steam locomotive. Of course, none of those are exact analogues because they all convert chemical or elastic potential energy into kinetic energy. But the underlying principle is still the same.</p>
-
-                            <p>In the black box model all of the counterweight's potential energy is converted into kinetic energy of the projectile.</p>
-                        </aside>
-                    </section>
-                    <!--
+<p>A medieval army laying siege to a fortified city had two
+strategies at their disposal:</p>
+<ol>
+<li>destroy the city's fortifications and</li>
+<li>destroy the inhabitants' morale.</li>
+</ol>
+<p>Both of these could be achieved with a Trebuchet.</p>
+<p>In the first instance they would hurl massive boulders at the
+city walls, eventually breaching them and gaining access to the
+city. There would be devastating loss of life in the process.</p>
+<p>The second tactic was aimed at humuliation. The attacking army
+would use their Trebuchet to lob the carcasses of dead animals and
+loads of excrement into the besieged city. In 1422 at the siege of
+the Karlstein Castle (Bohemia), the attacking army flung 2000
+carriage loads of dung over the city walls. It was literally a
+shit-slinging contest.</p>
+</aside>
+</section>
+<section>
+<!-- https://commons.wikimedia.org/wiki/File:Biohazard_symbol.svg -->
+<section><img src="Biohazard_symbol.svg">
+<p>Siege of Caffa (1346)<br>
+<font class="smallhref"><a href=
+"http://wwwnc.cdc.gov/eid/article/8/9/01-0536_article">Biological
+Warfare at the 1346 Siege of Caffa</a>, <em>Historical Review</em>,
+8(9), 2002.</font></p>
+<aside class="notes">
+<p>The Trebuchet has been called the <em>Atomic Bomb of the Middle
+Ages</em>. Howeveer, I think that it's actually more like the
+<em><a href="https://en.wikipedia.org/wiki/Ricin">Ricin</a> of the
+Dark Ages</em> because it was instrumental in the first application
+of biolgical warfare.</p>
+</aside>
+</section>
+<section><img src="Ukrain-physical-map.gif">
+<aside class="notes">
+<p>The Crimean city of Caffa (now Feodosiya in the Ukraine) was
+heavily fortified by two concentric walls. The inner wall enclosed
+6 000 houses, while the outer wall enclosed 11 000 houses. Caffa
+was besieged by invading Mongol forces in 1346. The city was under
+siege for almost 3 years. During this time the Mongol army became
+afflicted with The Plague. The attackers hurled the plague-infected
+cadavers into the city using Catapults and Trebuchets. Their
+objective was two-fold:</p>
+<ol>
+<li>to deal with their mortuary problem (literally "mountains of
+dead");</li>
+<li>in the hope that the "intolerable stench" would kill the
+inhabitants of Caffa.</li>
+</ol>
+<p>The cadavers would have been badly mangled in the process. Many
+of them would have literally exploded on impact (like a ripe plum),
+spreading the disease. The inhabitants of the city rapidly
+succumbed to The Plague. However, Caffa was only besieged from the
+land, so it could still receive supplies from sea and people were
+also able to escape to the sea, carrying the infection with them to
+the rest of Europes.</p>
+<p>The Black Death, which swept through claimed between a quarter
+and a third of the population. Caffa was thus the site of one of
+the most spectacular incidents of biological warfare ever.</p>
+</aside>
+</section>
+</section>
+<section><!--
+                                                                                <h2>Trebuchet</h2><hr>
+                                                                                <p class="tight">A medieval <font class="bigbiscuit">siege weapon</font> using a <font class="bigbiscuit">massive counterweight</font> to hurl a projectile <font class="bigbiscuit">great distances</font>.</p>
+                                                                        -->
+<h2>Design Parameters</h2>
+<hr>
+<aside class="notes">
+<p>The Trebuchet was invented in China around 500 BC and developed
+over a period of around 1000 years, during which time it evolved
+significantly as a result of experimentation and innovation. The
+predecessors of the Trebuchet were the catapult and the ballista,
+both of which relied on an elastic mechanism to propel a
+projectile. As a result they were limited in the mass of the
+projectile (so they were really only suitable for human targets) as
+well as the accuracy which they could achieve.</p>
+<p>The thing is that the Trebuchet is a wonderful piece of
+engineering: it can fling a 100 kg projectile over a distance of at
+least 300 m (enough to be out of range of enemy archers). How would
+you go about designing such a machine? In practice this was done
+mostly by experimentation (hence the 1000 year development time),
+but now we are a lot more sophisticated. We would first model the
+device. Then we'd develop a prototype. We might iterate these steps
+a few times before arriving at a final design. Only then would we
+build the final product.</p>
+</aside>
+</section>
+<section>
+<section>
+<h2>Stage #1: Naïve Model</h2>
+<aside class="notes">
+<p>The purpose of modelling is to know how something works before
+we actually build it. This applies to our games but also physical
+systems like a trebuchet.</p>
+<p>This is the simplest possible model, used to gain a ballpark
+(and optimistic) idea of how well a design would operate. In coding
+terms, this model can be thought of as a crude prototype.</p>
+</aside>
+</section>
+<section>
+<div style="font-size: 750%;">
+<p>$$ V \mapsto T $$</p>
+</div>
+<p><font class="biscuit">Trebuchet</font> converts <em>all</em>
+potential energy into kinetic energy.</p>
+<aside class="notes">
+<p>The principle of the Trebuchet is the conversion of potential
+energy into kinetic energy. So it is not dissimilar to firing a
+bullet from a rifle, the acceleration of a Ferrari, a catapult or
+the propulsion of a steam locomotive. Of course, none of those are
+exact analogues because they all convert chemical or elastic
+potential energy into kinetic energy. But the underlying principle
+is still the same.</p>
+<p>In the black box model all of the counterweight's potential
+energy is converted into kinetic energy of the projectile.</p>
+</aside>
+</section>
+<!--
                     <section>
                         <h3>Energy Equation</h3>
                         <hr>
@@ -211,21 +254,24 @@
                         </div>
                     </section>
                     -->
-                    <section>
-                        <div style="font-size: 250%;">
-                            $$ R = 2 \frac{M}{m} H $$
-                        </div>
-                        <p>with optimal launch angle of 45&deg;.</p>
-												<br>
-												<p class="highlight">What about gravity?</p>
-                        <aside class="notes">
-                            <p>The most important operating characteristic for a Trebuchet is its range. The attacking army needed to stay outside the range of the defending archers' bows.</p>
-                            <p>Interesting thing to note is that this is independent of the acceleration due to gravity. So a particular Trebuchet would have the same range on the Moon as it does on Earth despite the gravity being 1/6 weaker.</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <pre><code data-trim>
-immutable BlackBoxTrebuchet <: Trebuchet.TrebuchetBasic
+<section>
+<div style="font-size: 250%;">$$ R = 2 \frac{M}{m} H $$</div>
+<p>with optimal launch angle of 45°.</p>
+<br>
+<p class="highlight">What about gravity?</p>
+<aside class="notes">
+<p>The most important operating characteristic for a Trebuchet is
+its range. The attacking army needed to stay outside the range of
+the defending archers' bows.</p>
+<p>Interesting thing to note is that this is independent of the
+acceleration due to gravity. So a particular Trebuchet would have
+the same range on the Moon as it does on Earth despite the gravity
+being 1/6 weaker.</p>
+</aside>
+</section>
+<section>
+<pre><code data-trim="">
+immutable BlackBoxTrebuchet &lt;: Trebuchet.TrebuchetBasic
     M::Float64                      # Counterweight mass
     m::Float64                      # Projectile mass
     H::Float64                      # Counterweight height
@@ -237,29 +283,33 @@ function maximum_range(T::BlackBoxTrebuchet)
     2 * T.M / T.m * T.H * T.efficiency
 end
                         </code></pre>
-                        <pre><code data-trim>
-julia> maximum_range(BlackBoxTrebuchet(1000, 10, 5))
+<pre><code data-trim="">
+julia&gt; maximum_range(BlackBoxTrebuchet(1000, 10, 5))
 1000.0
-                        </code></pre>
-                    </section>
-				</section>
-
-                <section>
-                    <section>
-                    <h2>Stage #2: Seesaw Model</h2>
-                    </section>
-                    <section>
-                        <blockquote>
-                            &ldquo;It can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements <span class="biscuit">as simple and as few</span> as possible <span class="biscuit">without having to surrender the adequate representation of a single datum of experience</span>.&rdquo;<br>
-                            <cite>Albert Einstein [1933]</cite>
-                        </blockquote>
-                        <aside class="notes">
-                        <p>Einstein was of the same vintage as Winston Churchill. These men had an incredible grasp of the English language. Einstein was not always very economical with his words though. This quote has often been paraphrased as "Everything should be made as simple as possible, but no simpler."</p>
-
-                        <p>Naive model is too simple to actually capture key features. The Seesaw Model comes closer to reality.</p>
-                        </aside>
-                    </section>
-                    <!--
+                        </code></pre></section>
+</section>
+<section>
+<section>
+<h2>Stage #2: Seesaw Model</h2>
+</section>
+<section>
+<blockquote>“It can scarcely be denied that the supreme goal of all
+theory is to make the irreducible basic elements <span class=
+"biscuit">as simple and as few</span> as possible <span class=
+"biscuit">without having to surrender the adequate representation
+of a single datum of experience</span>.”<br>
+<cite>Albert Einstein [1933]</cite></blockquote>
+<aside class="notes">
+<p>Einstein was of the same vintage as Winston Churchill. These men
+had an incredible grasp of the English language. Einstein was not
+always very economical with his words though. This quote has often
+been paraphrased as "Everything should be made as simple as
+possible, but no simpler."</p>
+<p>Naive model is too simple to actually capture key features. The
+Seesaw Model comes closer to reality.</p>
+</aside>
+</section>
+<!--
                     <section data-background="spherical-cow-vacuum.jpg">
                         <aside class="notes">
                             <p>But what Einstein really meant to say was "Consider a <a href="https://en.wikipedia.org/wiki/Spherical_cow">spherical cow in a vacuum</a>". Why? Well, it still looks like a cow, but it is effectively a billiard ball in a frictionless environment.</p>
@@ -272,25 +322,30 @@ julia> maximum_range(BlackBoxTrebuchet(1000, 10, 5))
                         </aside>
                     </section>
                     -->
-                    <section>
-                        <img src="trebuchet-schematic.png" style="padding: 30px"></img>
-                        <aside class="notes">
-                            <p>The principle of the Trebuchet is essentially a lever. You have a bar which pivots around a fulcum. A force is applied to one end of the lever (by the counterweight) and this transfer a force to the projectile and the other end of the lever. This is called "Mechanical Advantage" and it's an idea that goes back to the time of Archimedes.</p>
-														<blockquote>
-																&ldquo;Give me a place to stand and with a lever I will move the whole world.&rdquo;<cite>Archimedes</cite>
-														</blockquote>
-
-                            <p>These were big machines with a massive counterweight. They were, as a result, slow to operate and could only fire around twice in an hour. You needed to make every shot count.</p>
-
-                            <p>The power at each end of the lever must be the same. Since the velocity increases the further one gets from the fulcrum, so then the force must decrease.</p>
-
-                            <p>Ideally the long arm would be roughly four times as long as the short arm; the counterweight would be roughly 100 times as massive as the projectile.</p>
-                        </aside>
-                    </section>
-                    <section>
-                        Applying <font class="biscuit">Newtonian Mechanics</font> to this system would be <em>hard</em>.
-                    </section>
-                    <!--
+<section><img src="trebuchet-schematic.png" style="padding: 30px">
+<aside class="notes">
+<p>The principle of the Trebuchet is essentially a lever. You have
+a bar which pivots around a fulcum. A force is applied to one end
+of the lever (by the counterweight) and this transfer a force to
+the projectile and the other end of the lever. This is called
+"Mechanical Advantage" and it's an idea that goes back to the time
+of Archimedes.</p>
+<blockquote>“Give me a place to stand and with a lever I will move
+the whole world.”<cite>Archimedes</cite></blockquote>
+<p>These were big machines with a massive counterweight. They were,
+as a result, slow to operate and could only fire around twice in an
+hour. You needed to make every shot count.</p>
+<p>The power at each end of the lever must be the same. Since the
+velocity increases the further one gets from the fulcrum, so then
+the force must decrease.</p>
+<p>Ideally the long arm would be roughly four times as long as the
+short arm; the counterweight would be roughly 100 times as massive
+as the projectile.</p>
+</aside>
+</section>
+<section>Applying <font class="biscuit">Newtonian Mechanics</font>
+to this system would be <em>hard</em>.</section>
+<!--
                     <section>
                         <h3>Assumptions</h3>
                         <ul>
@@ -301,29 +356,41 @@ julia> maximum_range(BlackBoxTrebuchet(1000, 10, 5))
                         </ul>
                     </section>
                     -->
-                    <section>
-                        <h3>Euler-Lagrange Equation</h3>
-                        <div style="font-size: 250%;">
-                            $$ \frac{d}{dt} \left( \frac{\partial L}{\partial \dot q} \right) - \frac{\partial L}{\partial q} = 0 $$
-                        </div>
-                        <p class="leftalign">where $L = T - V$ is the <a href="https://en.wikipedia.org/wiki/Lagrangian_mechanics#Definition_of_the_Lagrangian">Lagrangian</a>.</p>
-                        <aside class="notes">
-                            <p>Lagrange did for Classical Mechanics what Maxwell did for Electromagnetic Theory. Lagrangian Mechanics were developed at the end of the 18th century.</p>
-                            <p>If there's one thing that you need to take away from this equation it's the $dt$ in the denominator: we're talking about quantities that change with time and we are going to attack the problem by looking at the changes over very short periods of time.</p>
-                        </aside>
-                    </section>
-                    <section>
-                    <div style="font-size: 250%;">
-                        $$ \ddot\theta = g \frac{M L_1 - m L_2}{M L_1^2 + m L_2^2} \sin\theta $$
-                    </div>
-                    <!-- This is the equation for a Pendulum. https://en.wikipedia.org/wiki/Pendulum_(mathematics) -->
-                    <!-- <p class="leftalign">which looks an awful lot like <a href="https://en.wikipedia.org/wiki/Harmonic_oscillator">$ \ddot\theta \propto \theta $</a>.</p> -->
-                    <aside class="notes">
-                        <p>Now if this looks familiar to you, it's not a coincidence. This is essentially the <a href="https://en.wikipedia.org/wiki/Pendulum_(mathematics)">pendulum equation</a>. In the small amplitude limit it is approximated by the equation for a harmonic oscillator.</p>
-                        <p>The numerator is the nett torque on the system while the denominator is the moment of inertia.</p>
-                    </aside>
-                    </section>
-                    <!--
+<section>
+<h3>Euler-Lagrange Equation</h3>
+<div style="font-size: 250%;">$$ \frac{d}{dt} \left( \frac{\partial
+L}{\partial \dot q} \right) - \frac{\partial L}{\partial q} = 0
+$$</div>
+<p class="leftalign">where $L = T - V$ is the <a href=
+"https://en.wikipedia.org/wiki/Lagrangian_mechanics#Definition_of_the_Lagrangian">
+Lagrangian</a>.</p>
+<aside class="notes">
+<p>Lagrange did for Classical Mechanics what Maxwell did for
+Electromagnetic Theory. Lagrangian Mechanics were developed at the
+end of the 18th century.</p>
+<p>If there's one thing that you need to take away from this
+equation it's the $dt$ in the denominator: we're talking about
+quantities that change with time and we are going to attack the
+problem by looking at the changes over very short periods of
+time.</p>
+</aside>
+</section>
+<section>
+<div style="font-size: 250%;">$$ \ddot\theta = g \frac{M L_1 - m
+L_2}{M L_1^2 + m L_2^2} \sin\theta $$</div>
+<!-- This is the equation for a Pendulum. https://en.wikipedia.org/wiki/Pendulum_(mathematics) -->
+<!-- <p class="leftalign">which looks an awful lot like <a href="https://en.wikipedia.org/wiki/Harmonic_oscillator">$ \ddot\theta \propto \theta $</a>.</p> -->
+<aside class="notes">
+<p>Now if this looks familiar to you, it's not a coincidence. This
+is essentially the <a href=
+"https://en.wikipedia.org/wiki/Pendulum_(mathematics)">pendulum
+equation</a>. In the small amplitude limit it is approximated by
+the equation for a harmonic oscillator.</p>
+<p>The numerator is the nett torque on the system while the
+denominator is the moment of inertia.</p>
+</aside>
+</section>
+<!--
                     <section>
                         <div style="font-size: 250%;">
                             $$ M L_1 - m L_2 > 0 $$
@@ -331,7 +398,7 @@ julia> maximum_range(BlackBoxTrebuchet(1000, 10, 5))
                         <p>ensures that torque of counterweight is large enough.</p>
                     </section>
                     -->
-                    <!--
+<!--
                     <section>
                         <pre><code data-trim>
 immutable SeeSawTrebuchet <: Trebuchet.TrebuchetBasic
@@ -344,11 +411,11 @@ end
                         </code></pre>
                     </section>
                     -->
-                    <section>
-                        <pre><code data-trim>
+<section>
+<pre><code data-trim="">
 function solve(T::SeeSawTrebuchet)
     function deriv(t, y)
-        (y[1] < pi) ?
+        (y[1] &lt; pi) ?
         [
             y[2];
             GravAccel * (T.M * T.L1 - T.m * T.L2) /
@@ -363,139 +430,100 @@ function solve(T::SeeSawTrebuchet)
     result = convert(DataFrame, hcat(T, hcat(theta...).'));
     names!(result, [symbol(i) for i in ["time", "theta", "thetadot"]])
 
-    result[result[:theta] .< pi,:]
+    result[result[:theta] .&lt; pi,:]
 end
                         </code></pre>
-                        <aside class="notes">
-                            <p>Solving DE is a completely different process to what we are accustomed to at DERIVCO. Most of our calculations involve discrete quantities (number of games, amount lost or won) whereas the variables in these calculations are changing continuously with time.</p>
-
-														<p>The core of this code is a function which tells us how much theta changes during a small period of time. We feed this function into another meta-function, cunningly names ode2(), which implements the Runge-Kutta algorithm.</p>
-                        </aside>
-                    </section>
-                    <section data-background="#ffffff">
-                        <iframe width="900" height="600" frameborder="0" scrolling="no" src="https://plot.ly/~collierab/180.embed"></iframe>
-                    </section>
-                    <section data-background="#ffffff">
-                        <iframe width="900" height="600" frameborder="0" scrolling="no" src="https://plot.ly/~collierab/184.embed"></iframe>
-                        <aside class="notes">
-                            If you launched too soon then your projectile would go in the wrong direction and might end up in the lap of the King. This might be a career limiting occurrence.
-                        </aside>
-                    </section>
-                </section>
-
-                <section>
-                    <section>
-                        <h2>Trebuchets<br>attract<br>Eccentrics and Nutters</h2>
-                        (And <a href="https://www.youtube.com/watch?v=9seapca1Vh0">here's</a> some evidence.)
-                        <aside class="notes">
-                            <!-- http://www.smithsonianmag.com/people-places/readyaimfire-60722660/?no-ist -->
-
-														<p>In support of this statement I would point you to Ross.</p>
-
-                            <p>There's an army Colonel in the USA who has constructed meticulous scale-models of Trebuchets which he uses to fling small foil-wrapped packages of butter across restaurants.</p>
-
-                            <p>A landowner in Shropshire built his own Trebuchet at the top of a sloping farm field and used it to hurl drums of flaming gasoline, grand pianos, dead farm animals and even a car.</p>
-
-                            <p>Ross is now going to give a demonstration of his Model Trebuchet. I have made him promise that he won't use it to fling any shit, grand pianos or drums of flaming gasoline at you.</p>
-                        </aside>
-                    </section>
-                    <!--
+<aside class="notes">
+<p>Solving DE is a completely different process to what we are
+accustomed to at DERIVCO. Most of our calculations involve discrete
+quantities (number of games, amount lost or won) whereas the
+variables in these calculations are changing continuously with
+time.</p>
+<p>The core of this code is a function which tells us how much
+theta changes during a small period of time. We feed this function
+into another meta-function, cunningly names ode2(), which
+implements the Runge-Kutta algorithm.</p>
+</aside>
+</section>
+<section data-background="#ffffff"><iframe width="900" height="600"
+frameborder="0" scrolling="no" src=
+"https://plot.ly/~collierab/180.embed"></iframe></section>
+<section data-background="#ffffff"><iframe width="900" height="600"
+frameborder="0" scrolling="no" src=
+"https://plot.ly/~collierab/184.embed"></iframe>
+<aside class="notes">If you launched too soon then your projectile
+would go in the wrong direction and might end up in the lap of the
+King. This might be a career limiting occurrence.</aside>
+</section>
+</section>
+<section>
+<section>
+<h2>Trebuchets<br>
+attract<br>
+Eccentrics and Nutters</h2>
+(And <a href=
+"https://www.youtube.com/watch?v=9seapca1Vh0">here's</a> some
+evidence.)
+<aside class="notes">
+<!-- http://www.smithsonianmag.com/people-places/readyaimfire-60722660/?no-ist -->
+<p>In support of this statement I would point you to Ross.</p>
+<p>There's an army Colonel in the USA who has constructed
+meticulous scale-models of Trebuchets which he uses to fling small
+foil-wrapped packages of butter across restaurants.</p>
+<p>A landowner in Shropshire built his own Trebuchet at the top of
+a sloping farm field and used it to hurl drums of flaming gasoline,
+grand pianos, dead farm animals and even a car.</p>
+<p>Ross is now going to give a demonstration of his Model
+Trebuchet. I have made him promise that he won't use it to fling
+any shit, grand pianos or drums of flaming gasoline at you.</p>
+</aside>
+</section>
+<!--
                     <section>
                         <iframe width="840" height="630" src="https://www.youtube.com/embed/9seapca1Vh0" frameborder="0" allowfullscreen></iframe>
                     </section>
-                    -->
-                </section>
-			</div>
+                    --></section>
+</div>
+</div>
+<script src="lib/js/head.min.js">
+</script> 
+<script src="js/reveal.js">
+</script> 
+<script>
 
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+                        // Full list of configuration options available at:
+                        // https://github.com/hakimel/reveal.js#configuration
+                        Reveal.initialize({
+                                controls: true,
+                                progress: true,
+                                history: true,
+                                center: true,
 
                 help: true,                 // Flags if we should show a help overlay when the questionmark key is pressed
                 // showNotes: true,            // Flags if speaker notes should be visible to all viewers
 
-				transition: 'convex', // none, fade, slide, convex, concave, zoom
+                                transition: 'convex', // none, fade, slide, convex, concave, zoom
 
                 math: {
                     mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
                     config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
                 },
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true },
+                                // Optional reveal.js plugins
+                                dependencies: [
+                                        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                                        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                                        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                                        { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                                        { src: 'plugin/zoom-js/zoom.js', async: true },
+                                        { src: 'plugin/notes/notes.js', async: true },
                     { src: 'plugin/math/math.js', async: true }
-				]
-			});
+                                ]
+                        });
 
-		</script>
-
-	</body>
+</script>ugin/math/math.js', async: true } ] }); tml&gt; ; tml&gt;
+&gt; tml&gt; tml&gt; &gt; &gt; tml&gt; &gt; ody&gt; tml&gt; &gt;
+tml&gt; tml&gt; &gt; &gt; tml&gt; &gt; /html&gt; tml&gt; ; tml&gt;
+&gt; tml&gt; tml&gt; &gt; &gt; tml&gt; &gt; &gt; &gt;
+</body>
 </html>
-ugin/math/math.js', async: true }
-				]
-			});
-
-		</script>
-
-	</body>
-</html>
-tml>
-;
-
-		</script>
-
-	</body>
-</html>
-tml>
->
-tml>
-tml>
->
->
-tml>
->
-ody>
-</html>
-tml>
->
-tml>
-tml>
->
->
-tml>
->
-/html>
-tml>
-;
-
-		</script>
-
-	</body>
-</html>
-tml>
->
-tml>
-tml>
->
->
-tml>
->
->
->
