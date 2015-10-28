@@ -56,6 +56,7 @@ Reference parameters can be tested with the [Virtual Trebuchet](http://virtualtr
 - [A Mathematical Model for a Trebuchet](http://classes.engineering.wustl.edu/2009/fall/ese251/presentations/(AAM_13)Trebuchet.pdf)
 - [Trebuchet Physics][trebphysics]
 - [Trebuchet Mechanics][trebmechanics] (which includes a high level of mathematical detail)
+- [The Algorithmic Beauty of the Trebuchet](http://www.algobeautytreb.com/)
 
 [trebmechanics]: http://asme.usu.edu/wp-content/uploads/2013/09/trebmath35.pdf "Trebuchet Mechanics"
 [trebphysics]: http://www.real-world-physics-problems.com/trebuchet-physics.html "Trebuchet Physics"

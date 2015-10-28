@@ -32,6 +32,11 @@ writetable("seesaw-solution.csv", solution)
 
 # =====================================================================================================================
 
+# "Trebuchet Mechanics" considers a Seesaw Trebuchet with M = 100 lb, m = 1 lb, L1 = 1 ft and L2 = 4 ft. The optimal
+# range of 38.4 ft is obtained for a release angle of 38.0°.
+
+# =====================================================================================================================
+
 # Ross's Trebuchet.
 #
 # m = 5 g
